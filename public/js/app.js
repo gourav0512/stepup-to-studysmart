@@ -122,7 +122,7 @@ async function goal() {
   let sel = cur.goal_type, ids = new Set(cur.backlog_subject_ids);
   const subs = (await api(`/subjects?upto=${profile.academic.semester}`)).subjects;
   const opts = [
-    ['back_clear', '🧱', 'Back Clear', 'Focus on clearing backlog subjects with essential, frequently asked topics.'],
+    ['back_clear', '🧱', 'Backlogs', 'Focus on clearing backlog subjects with essential, frequently asked topics.'],
     ['safe_score', '🛡️', 'Safe Score', 'Aim for roughly 50% by covering achievable, high-coverage topics.'],
     ['good_marks', '🚀', 'Good Marks', 'Aim for roughly 90% with full syllabus coverage, PYQ practice and repeated revision.'],
   ];
