@@ -1,0 +1,4 @@
+node_modules/
+planner.db*
+uploads/*.pdf
+.env

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Study Planner</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="side">
+    <div class="brand"><div class="logo">S</div>Smart Study Planner</div>
+    <nav class="nav">
+      <a href="#/dashboard" data-r="dashboard"><span class="ic">🏠</span>Dashboard</a>
+      <a href="#/academic" data-r="academic"><span class="ic">🎓</span>Academic Details</a>
+      <a href="#/goal" data-r="goal"><span class="ic">🎯</span>Study Goal</a>
+      <a href="#/syllabus" data-r="syllabus"><span class="ic">📚</span>Subjects &amp; Syllabus</a>
+      <a href="#/pyq" data-r="pyq"><span class="ic">📝</span>Previous Year Questions</a>
+      <a href="#/plan" data-r="plan"><span class="ic">🗓️</span>Study Plan</a>
+      <a href="#/progress" data-r="progress"><span class="ic">📈</span>Progress Tracker</a>
+    </nav>
+    <div class="side-foot">AKTU B.Tech CSE · 2025-26<br>Sample data is labelled DEMO.</div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+      <div class="right row"><span id="uname" class="small" style="font-weight:600"></span><div class="avatar" id="avatar"></div><button class="btn ghost sm" id="logout">Log out</button></div>
+    </header>
+    <main id="view"></main>
+  </div>
+</div>
+<script src="/js/common.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>

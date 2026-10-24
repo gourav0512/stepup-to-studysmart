@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Study Planner - Sign in</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="auth">
+  <section class="hero">
+    <div class="row"><div class="logo" style="width:44px;height:44px;background:#fff;color:#4f46e5">S</div><b style="font-size:18px">Smart Study Planner</b></div>
+    <h1>Goal based exam preparation for AKTU B.Tech CSE</h1>
+    <p>Tell us your exam date, daily hours and goal. Get a day-by-day plan with the reason behind every topic.</p>
+    <ul>
+      <li>🎯 Back Clear, Safe Score or Good Marks goals</li>
+      <li>📚 Syllabus tracking with topic-level progress</li>
+      <li>📝 Previous-year question frequency (historical, not official weightage)</li>
+    </ul>
+  </section>
+  <section class="authbox">
+    <div class="card authcard">
+      <div class="tabs" style="width:100%"><button class="tab on" data-tab="login" style="flex:1">Log in</button><button class="tab" data-tab="signup" style="flex:1">Sign up</button></div>
+
+      <form id="login" novalidate class="grid">
+        <div><label class="f" for="le">Email</label><input class="inp" id="le" type="email" autocomplete="email" required></div>
+        <div><label class="f" for="lp">Password</label><div class="pw"><input class="inp" id="lp" type="password" autocomplete="current-password" required><button type="button" data-show="lp">Show</button></div></div>
+        <div class="fieldmsg" id="lmsg"></div>
+        <button class="btn" type="submit">Log in</button>
+      </form>
+
+      <form id="signup" class="grid hide" novalidate>
+        <div><label class="f" for="sn">Student name</label><input class="inp" id="sn" autocomplete="name" required></div>
+        <div><label class="f" for="sr">Roll number</label><input class="inp" id="sr" required><div class="fieldmsg" data-for="sr"></div></div>
+        <div><label class="f" for="se">Email</label><input class="inp" id="se" type="email" autocomplete="email" required><div class="fieldmsg" data-for="se"></div></div>
+        <div><label class="f" for="sp">Password</label><div class="pw"><input class="inp" id="sp" type="password" autocomplete="new-password" required><button type="button" data-show="sp">Show</button></div>
+          <div class="meter" id="meter"><i></i><i></i><i></i></div><div class="fieldmsg" data-for="sp"></div></div>
+        <div><label class="f" for="sc">Confirm password</label><input class="inp" id="sc" type="password" autocomplete="new-password" required><div class="fieldmsg" data-for="sc"></div></div>
+        <div class="fieldmsg" id="smsg"></div>
+        <button class="btn" type="submit">Create account</button>
+      </form>
+    </div>
+  </section>
+</div>
+<script src="/js/common.js"></script>
+<script src="/js/auth.js"></script>
+</body>
+</html>
